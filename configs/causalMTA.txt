@@ -1,0 +1,54 @@
+device=cuda:0
+multi_gpu=False
+
+model_name=causalMTA
+save_model=True
+model_save_path=./save/model_dict/causalMTA_c.pth
+
+pretrained=True
+pretrained_model_path=./save/model_dict/causalMTA_c.pth
+
+
+train_vae = False
+train_dc = False
+
+pre_vae_path = ./save/model_dict/reweighting/vae/vae_01.mdl
+stored_vae_path=./save/model_dict/reweighting/vae/vae_01.mdl
+vae_epoch_num=80
+vae_batch_size=200
+vae_learning_rate=0.0005
+vae_LSTM_hidden_dim=30
+vae_latent_variable_size=5
+
+pre_dc_path=./save/model_dict/reweighting/dc/dc_1.mdl
+stored_dc_path=./save/model_dict/reweighting/dc/dc_1.mdl
+dc_epoch_num=100
+dc_hidden_size=10
+dc_hidden_layer=4
+dc_user_embedding_dim=5
+dc_learning_rate=0.01
+dc_batch_size=500
+
+pre_weights_path= ./save/model_dict/reweighting/weights/weights_03.npy
+stored_weights_path=./save/model_dict/reweighting/weights/weights_03.npy
+
+
+
+
+pretrained_conversion_pred_model=False
+
+predictor_learning_rate=0.0001
+predictor_hidden_dim=64
+predictor_hidden_layer_depth=2
+predictor_fc_hidden_dim=48
+predictor_fc_hidden_layer=2
+predictor_batch_size=200
+predictor_epoch_num=100
+predictor_drop_rate=0.2
+gradient_reversal_layer=True
+
+
+Budget_proportion = 0.0625
+var_loss_lambda = 0
+bce_loss_nita = 0.5
+ce_loss_gamma = 0.5

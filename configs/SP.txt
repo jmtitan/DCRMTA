@@ -1,0 +1,14 @@
+device=cuda:0
+multi_gpu=False
+
+model_name=SP
+save_model=False
+model_save_path =NOne
+pretrained=True
+pretrained_model_path=None
+
+
+
+Budget_proportion = 0.5
+
+

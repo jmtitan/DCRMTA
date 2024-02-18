@@ -1,0 +1,12 @@
+nohup: 忽略输入
+
+mn = ['LR']
+best model performance, AUC: 0.7021 | logloss: 0.28662538377828495
+mn = ['Nlinear']
+best model performance, AUC: 0.7933 | logloss: 0.19496164129092275
+mn =['DNAMTA']
+best model performance, AUC: 0.7991 | logloss: 0.15281214691618436
+mn= ['causalMTA']
+best model performance, AUC: 0.7974 | logloss: 0.1534786879348712
+mn = ['DCRMTA-cf1.0']
+best model performance, AUC: 0.7951 | logloss: 0.14897290943557642

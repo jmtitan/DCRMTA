@@ -1,0 +1,26 @@
+device=cuda:0
+multi_gpu=False
+
+model_name=DNAMTA
+save_model=True
+model_save_path=./save/model_dict/DNAMTA_c.pth
+pretrained=True
+pretrained_model_path=./save/model_dict/DNAMTA_c.pth
+
+
+
+time_decay=1
+
+predictor_learning_rate=0.0001
+predictor_hidden_dim=64
+predictor_hidden_layer_depth=2
+predictor_batch_size=200
+predictor_epoch_num=100
+predictor_drop_rate=0.2
+
+bce_loss_nita = 1
+ce_loss_gamma = 0
+var_loss_lambda = 0
+
+Budget_proportion = 0.0625
+

@@ -1,0 +1,28 @@
+device=cuda:0
+multi_gpu=False
+
+model_name=DCRMTA
+save_model=True
+model_save_path=./save/model_dict/DCRMTA_c.pth
+pretrained=False
+pretrained_model_path=./save/model_dict/DCRMTA_c.pth
+
+
+
+time_decay=1
+
+predictor_learning_rate=0.0001
+predictor_hidden_dim=64
+predictor_hidden_layer_depth=2
+predictor_batch_size=200
+predictor_epoch_num=100
+predictor_drop_rate=0.2
+gradient_reversal_layer=True
+
+
+bce_loss_nita = 0.5
+ce_loss_gamma = 0.5
+cf_loss_delta = 0.5
+
+Budget_proportion = 0.0625
+

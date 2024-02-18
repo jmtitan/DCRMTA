@@ -1,0 +1,18 @@
+device=cuda:0
+multi_gpu=False
+
+model_name=Nlinear
+save_model=True
+model_save_path = ./save/model_dict/Nlinear_c.pth
+pretrained=True
+pretrained_model_path=./save/model_dict/Nlinear_c.pth
+
+predictor_batch_size=200
+predictor_epoch_num=100
+predictor_learning_rate=0.0001
+
+attr_criterion = True
+Budget_proportion = 0.0625
+
+bce_loss_nita = 0.5
+var_loss_lambda = 0.5

@@ -1,0 +1,153 @@
+nohup: 忽略输入
+'CONFIGS:\n'
+{'Budget_proportion': 0.5,
+ 'bce_loss_nita': 0.5,
+ 'ce_loss_gamma': 0.5,
+ 'cf_loss_delta': 0.25,
+ 'device': 'cuda:0',
+ 'gradient_reversal_layer': True,
+ 'model_name': 'DCRMTA',
+ 'model_save_path': './save/model_dict/CARNN.pth',
+ 'multi_gpu': False,
+ 'predictor_batch_size': 200,
+ 'predictor_drop_rate': 0.2,
+ 'predictor_epoch_num': 100,
+ 'predictor_hidden_dim': 64,
+ 'predictor_hidden_layer_depth': 2,
+ 'predictor_learning_rate': 0.0001,
+ 'pretrained': False,
+ 'pretrained_model_path': 'None',
+ 'save_model': True,
+ 'time_decay': 1}
+{'C_embedding_dim': 4,
+ 'U_embedding_dim': 5,
+ 'cat_embedding_dim_list': [5, 5, 5, 5, 5, 5, 5, 5, 5],
+ 'dataset': 'Mock',
+ 'device': 'cuda:0',
+ 'file_CPO_test': './data/mock/test/CPO_test.pkl',
+ 'file_CPO_train': './data/mock/train/CPO_train.pkl',
+ 'file_C_test': './data/mock/test/C_test.pkl',
+ 'file_C_train': './data/mock/train/C_train.pkl',
+ 'file_T_test': './data/mock/test/T_test.pkl',
+ 'file_T_train': './data/mock/train/T_train.pkl',
+ 'file_U_test': './data/mock/test/U_test_new.pkl',
+ 'file_U_train': './data/mock/train/U_train_new.pkl',
+ 'file_Y_test': './data/mock/test/Y_test.pkl',
+ 'file_Y_train': './data/mock/train/Y_train.pkl',
+ 'file_cat1_9_test': './data/mock/test/cat1_9_test_new.pkl',
+ 'file_cat1_9_train': './data/mock/train/cat1_9_train_new.pkl',
+ 'file_cost_test': './data/mock/test/cost_test.pkl',
+ 'file_cost_train': './data/mock/train/cost_train.pkl',
+ 'global_campaign_size': 10,
+ 'global_cat_num_list': [9, 23, 63, 17, 6, 30, 806, 11, 30],
+ 'global_user_num': 157332,
+ 'pre_weights_path': './save/model_dict/reweighting/weights/weights_03.npy',
+ 'stored_weights_path': './save/model_dict/reweighting/weights/weights_03.npy',
+ 'with_weight': False}
+Training --------------------------------->
+Start Training...
+Epoch: 0 | Accuracy: 0.891 | Recall: 0.092 | Precision: 0.519| RMSE: 0.3296| AUC: 0.5408 | logloss_mean: 0.33299854976459614
+Epoch: 1 | Accuracy: 0.896 | Recall: 0.162 | Precision: 0.591| RMSE: 0.3223| AUC: 0.5739 | logloss_mean: 0.2640911252102227
+Epoch: 2 | Accuracy: 0.896 | Recall: 0.207 | Precision: 0.562| RMSE: 0.323| AUC: 0.5937 | logloss_mean: 0.2423185003035277
+Epoch: 3 | Accuracy: 0.903 | Recall: 0.239 | Precision: 0.659| RMSE: 0.311| AUC: 0.6119 | logloss_mean: 0.23164468474722313
+Epoch: 4 | Accuracy: 0.905 | Recall: 0.229 | Precision: 0.707| RMSE: 0.3077| AUC: 0.6086 | logloss_mean: 0.22813682483274092
+Epoch: 5 | Accuracy: 0.903 | Recall: 0.272 | Precision: 0.63| RMSE: 0.3116| AUC: 0.6264 | logloss_mean: 0.21688394244868778
+Epoch: 6 | Accuracy: 0.899 | Recall: 0.298 | Precision: 0.576| RMSE: 0.3174| AUC: 0.6357 | logloss_mean: 0.21054898239491346
+Epoch: 7 | Accuracy: 0.905 | Recall: 0.272 | Precision: 0.66| RMSE: 0.3081| AUC: 0.6272 | logloss_mean: 0.2058912244742935
+Epoch: 8 | Accuracy: 0.906 | Recall: 0.291 | Precision: 0.663| RMSE: 0.3062| AUC: 0.6363 | logloss_mean: 0.20314780308964472
+Epoch: 9 | Accuracy: 0.909 | Recall: 0.344 | Precision: 0.659| RMSE: 0.302| AUC: 0.6609 | logloss_mean: 0.19960537862973016
+Epoch: 10 | Accuracy: 0.907 | Recall: 0.295 | Precision: 0.674| RMSE: 0.3044| AUC: 0.6389 | logloss_mean: 0.19663552192121164
+Epoch: 11 | Accuracy: 0.907 | Recall: 0.318 | Precision: 0.657| RMSE: 0.3044| AUC: 0.649 | logloss_mean: 0.1945864921616553
+Epoch: 12 | Accuracy: 0.908 | Recall: 0.352 | Precision: 0.65| RMSE: 0.3026| AUC: 0.6646 | logloss_mean: 0.19138857158063685
+Epoch: 13 | Accuracy: 0.909 | Recall: 0.333 | Precision: 0.671| RMSE: 0.3014| AUC: 0.6563 | logloss_mean: 0.18964519130192625
+Epoch: 14 | Accuracy: 0.909 | Recall: 0.386 | Precision: 0.636| RMSE: 0.3021| AUC: 0.6796 | logloss_mean: 0.18749107567828546
+Epoch: 15 | Accuracy: 0.911 | Recall: 0.391 | Precision: 0.651| RMSE: 0.2992| AUC: 0.6826 | logloss_mean: 0.18441208010738336
+Epoch: 16 | Accuracy: 0.915 | Recall: 0.396 | Precision: 0.697| RMSE: 0.2914| AUC: 0.6875 | logloss_mean: 0.18237118128216961
+Epoch: 17 | Accuracy: 0.914 | Recall: 0.399 | Precision: 0.683| RMSE: 0.2933| AUC: 0.6879 | logloss_mean: 0.1793711185003224
+Epoch: 18 | Accuracy: 0.915 | Recall: 0.396 | Precision: 0.697| RMSE: 0.2914| AUC: 0.6874 | logloss_mean: 0.17475017957678698
+Epoch: 19 | Accuracy: 0.917 | Recall: 0.38 | Precision: 0.73| RMSE: 0.2884| AUC: 0.6813 | logloss_mean: 0.17062307485532993
+Epoch: 20 | Accuracy: 0.916 | Recall: 0.361 | Precision: 0.742| RMSE: 0.2891| AUC: 0.6729 | logloss_mean: 0.16839774347190717
+Epoch: 21 | Accuracy: 0.918 | Recall: 0.401 | Precision: 0.729| RMSE: 0.286| AUC: 0.6913 | logloss_mean: 0.16521331758319752
+Epoch: 22 | Accuracy: 0.919 | Recall: 0.407 | Precision: 0.735| RMSE: 0.2845| AUC: 0.6944 | logloss_mean: 0.16294758371755624
+Epoch: 23 | Accuracy: 0.921 | Recall: 0.425 | Precision: 0.743| RMSE: 0.281| AUC: 0.7034 | logloss_mean: 0.16173131030179488
+Epoch: 24 | Accuracy: 0.92 | Recall: 0.364 | Precision: 0.788| RMSE: 0.2832| AUC: 0.6762 | logloss_mean: 0.16007751035639672
+Epoch: 25 | Accuracy: 0.92 | Recall: 0.411 | Precision: 0.748| RMSE: 0.2822| AUC: 0.6968 | logloss_mean: 0.1586542809924599
+Epoch: 26 | Accuracy: 0.922 | Recall: 0.415 | Precision: 0.768| RMSE: 0.2787| AUC: 0.6996 | logloss_mean: 0.15740562554955193
+Epoch: 27 | Accuracy: 0.922 | Recall: 0.421 | Precision: 0.757| RMSE: 0.2796| AUC: 0.702 | logloss_mean: 0.15630740942704735
+Epoch: 28 | Accuracy: 0.922 | Recall: 0.434 | Precision: 0.742| RMSE: 0.28| AUC: 0.7078 | logloss_mean: 0.15542877305443714
+Epoch: 29 | Accuracy: 0.923 | Recall: 0.415 | Precision: 0.774| RMSE: 0.2779| AUC: 0.7003 | logloss_mean: 0.1541416310587699
+Epoch: 30 | Accuracy: 0.921 | Recall: 0.432 | Precision: 0.732| RMSE: 0.2818| AUC: 0.7062 | logloss_mean: 0.15302328704811127
+Epoch: 31 | Accuracy: 0.923 | Recall: 0.432 | Precision: 0.766| RMSE: 0.2768| AUC: 0.7076 | logloss_mean: 0.15245619557743656
+Epoch: 32 | Accuracy: 0.924 | Recall: 0.414 | Precision: 0.788| RMSE: 0.2761| AUC: 0.7003 | logloss_mean: 0.15083910450248897
+Epoch: 33 | Accuracy: 0.923 | Recall: 0.445 | Precision: 0.752| RMSE: 0.2771| AUC: 0.7135 | logloss_mean: 0.15004829386954457
+Epoch: 34 | Accuracy: 0.924 | Recall: 0.452 | Precision: 0.759| RMSE: 0.275| AUC: 0.717 | logloss_mean: 0.1490861836468204
+Epoch: 35 | Accuracy: 0.925 | Recall: 0.46 | Precision: 0.753| RMSE: 0.2747| AUC: 0.721 | logloss_mean: 0.1487663439746259
+Epoch: 36 | Accuracy: 0.923 | Recall: 0.441 | Precision: 0.752| RMSE: 0.2776| AUC: 0.7114 | logloss_mean: 0.1478650085808872
+Epoch: 37 | Accuracy: 0.924 | Recall: 0.383 | Precision: 0.827| RMSE: 0.2762| AUC: 0.6864 | logloss_mean: 0.14730871870697845
+Epoch: 38 | Accuracy: 0.924 | Recall: 0.461 | Precision: 0.743| RMSE: 0.2765| AUC: 0.7206 | logloss_mean: 0.14698646314333655
+Epoch: 39 | Accuracy: 0.923 | Recall: 0.458 | Precision: 0.744| RMSE: 0.2767| AUC: 0.7191 | logloss_mean: 0.1457082036050778
+Epoch: 40 | Accuracy: 0.928 | Recall: 0.487 | Precision: 0.772| RMSE: 0.268| AUC: 0.7348 | logloss_mean: 0.14509291306716723
+Epoch: 41 | Accuracy: 0.923 | Recall: 0.458 | Precision: 0.738| RMSE: 0.2776| AUC: 0.7191 | logloss_mean: 0.14412834987189005
+Epoch: 42 | Accuracy: 0.927 | Recall: 0.469 | Precision: 0.775| RMSE: 0.27| AUC: 0.7262 | logloss_mean: 0.14395887987887107
+Epoch: 43 | Accuracy: 0.927 | Recall: 0.472 | Precision: 0.768| RMSE: 0.2708| AUC: 0.7273 | logloss_mean: 0.1433723080514487
+Epoch: 44 | Accuracy: 0.927 | Recall: 0.481 | Precision: 0.769| RMSE: 0.2694| AUC: 0.7317 | logloss_mean: 0.14256477833372874
+Epoch: 45 | Accuracy: 0.927 | Recall: 0.455 | Precision: 0.79| RMSE: 0.2699| AUC: 0.7199 | logloss_mean: 0.1418370700450343
+Epoch: 46 | Accuracy: 0.928 | Recall: 0.479 | Precision: 0.778| RMSE: 0.2681| AUC: 0.7313 | logloss_mean: 0.1413378376712643
+Epoch: 47 | Accuracy: 0.928 | Recall: 0.5 | Precision: 0.762| RMSE: 0.2679| AUC: 0.7403 | logloss_mean: 0.1404334571284866
+Epoch: 48 | Accuracy: 0.929 | Recall: 0.484 | Precision: 0.78| RMSE: 0.2672| AUC: 0.7335 | logloss_mean: 0.1406656060847047
+Epoch: 49 | Accuracy: 0.928 | Recall: 0.478 | Precision: 0.775| RMSE: 0.2688| AUC: 0.7305 | logloss_mean: 0.13990474485077906
+Epoch: 50 | Accuracy: 0.93 | Recall: 0.514 | Precision: 0.765| RMSE: 0.2655| AUC: 0.7472 | logloss_mean: 0.1396026825577527
+Epoch: 51 | Accuracy: 0.93 | Recall: 0.489 | Precision: 0.792| RMSE: 0.2644| AUC: 0.7365 | logloss_mean: 0.1387178143893269
+Epoch: 52 | Accuracy: 0.929 | Recall: 0.497 | Precision: 0.772| RMSE: 0.2665| AUC: 0.7396 | logloss_mean: 0.13795656443220897
+Epoch: 53 | Accuracy: 0.931 | Recall: 0.537 | Precision: 0.766| RMSE: 0.262| AUC: 0.7584 | logloss_mean: 0.137504605300616
+Epoch: 54 | Accuracy: 0.929 | Recall: 0.482 | Precision: 0.791| RMSE: 0.2656| AUC: 0.733 | logloss_mean: 0.13667591257491013
+Epoch: 55 | Accuracy: 0.925 | Recall: 0.425 | Precision: 0.795| RMSE: 0.2736| AUC: 0.7056 | logloss_mean: 0.13682233032689078
+Epoch: 56 | Accuracy: 0.931 | Recall: 0.53 | Precision: 0.764| RMSE: 0.2633| AUC: 0.7548 | logloss_mean: 0.1359356126286885
+Epoch: 57 | Accuracy: 0.929 | Recall: 0.476 | Precision: 0.795| RMSE: 0.2659| AUC: 0.7304 | logloss_mean: 0.13517071464487795
+Epoch: 58 | Accuracy: 0.928 | Recall: 0.457 | Precision: 0.797| RMSE: 0.2686| AUC: 0.7212 | logloss_mean: 0.13488757636994847
+Epoch: 59 | Accuracy: 0.932 | Recall: 0.507 | Precision: 0.792| RMSE: 0.2617| AUC: 0.7453 | logloss_mean: 0.13407634082476347
+Epoch: 60 | Accuracy: 0.929 | Recall: 0.496 | Precision: 0.769| RMSE: 0.2672| AUC: 0.739 | logloss_mean: 0.1339968020747443
+Epoch: 61 | Accuracy: 0.927 | Recall: 0.444 | Precision: 0.804| RMSE: 0.2695| AUC: 0.7155 | logloss_mean: 0.13372416058736084
+Epoch: 62 | Accuracy: 0.928 | Recall: 0.471 | Precision: 0.779| RMSE: 0.2692| AUC: 0.7275 | logloss_mean: 0.13320454274693017
+Epoch: 63 | Accuracy: 0.931 | Recall: 0.513 | Precision: 0.777| RMSE: 0.2633| AUC: 0.7474 | logloss_mean: 0.13223440120521102
+Epoch: 64 | Accuracy: 0.932 | Recall: 0.515 | Precision: 0.785| RMSE: 0.2615| AUC: 0.749 | logloss_mean: 0.13174612897909382
+Epoch: 65 | Accuracy: 0.931 | Recall: 0.541 | Precision: 0.759| RMSE: 0.2627| AUC: 0.7598 | logloss_mean: 0.1313424943946302
+Epoch: 66 | Accuracy: 0.929 | Recall: 0.518 | Precision: 0.76| RMSE: 0.2656| AUC: 0.7491 | logloss_mean: 0.1305547880497083
+Epoch: 67 | Accuracy: 0.931 | Recall: 0.519 | Precision: 0.779| RMSE: 0.262| AUC: 0.7507 | logloss_mean: 0.12956936482918782
+Epoch: 68 | Accuracy: 0.93 | Recall: 0.515 | Precision: 0.773| RMSE: 0.2638| AUC: 0.7483 | logloss_mean: 0.12928844281716398
+Epoch: 69 | Accuracy: 0.931 | Recall: 0.491 | Precision: 0.805| RMSE: 0.262| AUC: 0.7384 | logloss_mean: 0.12882035964810587
+Epoch: 70 | Accuracy: 0.93 | Recall: 0.503 | Precision: 0.78| RMSE: 0.2643| AUC: 0.7429 | logloss_mean: 0.12838156824678326
+Epoch: 71 | Accuracy: 0.93 | Recall: 0.492 | Precision: 0.787| RMSE: 0.2649| AUC: 0.7378 | logloss_mean: 0.12751746198921962
+Epoch: 72 | Accuracy: 0.932 | Recall: 0.561 | Precision: 0.758| RMSE: 0.2599| AUC: 0.7695 | logloss_mean: 0.12778229919235104
+Epoch: 73 | Accuracy: 0.931 | Recall: 0.577 | Precision: 0.737| RMSE: 0.2621| AUC: 0.7759 | logloss_mean: 0.1270993649688305
+Epoch: 74 | Accuracy: 0.933 | Recall: 0.543 | Precision: 0.775| RMSE: 0.2593| AUC: 0.7618 | logloss_mean: 0.1262735072116467
+Epoch: 75 | Accuracy: 0.929 | Recall: 0.534 | Precision: 0.747| RMSE: 0.2661| AUC: 0.7556 | logloss_mean: 0.12631842029705934
+Epoch: 76 | Accuracy: 0.931 | Recall: 0.529 | Precision: 0.768| RMSE: 0.2626| AUC: 0.7548 | logloss_mean: 0.12541779415971302
+Epoch: 77 | Accuracy: 0.929 | Recall: 0.542 | Precision: 0.738| RMSE: 0.2666| AUC: 0.7591 | logloss_mean: 0.12558390682979118
+Epoch: 78 | Accuracy: 0.931 | Recall: 0.499 | Precision: 0.796| RMSE: 0.2623| AUC: 0.7414 | logloss_mean: 0.12505955531632582
+Epoch: 79 | Accuracy: 0.931 | Recall: 0.508 | Precision: 0.787| RMSE: 0.2624| AUC: 0.7456 | logloss_mean: 0.12473277341194668
+Epoch: 80 | Accuracy: 0.931 | Recall: 0.516 | Precision: 0.783| RMSE: 0.2619| AUC: 0.7492 | logloss_mean: 0.1242045181875741
+Epoch: 81 | Accuracy: 0.933 | Recall: 0.549 | Precision: 0.774| RMSE: 0.2587| AUC: 0.7645 | logloss_mean: 0.12364535970902703
+Epoch: 82 | Accuracy: 0.934 | Recall: 0.533 | Precision: 0.792| RMSE: 0.2577| AUC: 0.7579 | logloss_mean: 0.12367045576910227
+Epoch: 83 | Accuracy: 0.93 | Recall: 0.552 | Precision: 0.745| RMSE: 0.2638| AUC: 0.7645 | logloss_mean: 0.12260172550014935
+Epoch: 84 | Accuracy: 0.933 | Recall: 0.54 | Precision: 0.779| RMSE: 0.2591| AUC: 0.7605 | logloss_mean: 0.1224699402725306
+Epoch: 85 | Accuracy: 0.929 | Recall: 0.546 | Precision: 0.733| RMSE: 0.2671| AUC: 0.761 | logloss_mean: 0.12210580448448224
+Epoch: 86 | Accuracy: 0.933 | Recall: 0.543 | Precision: 0.774| RMSE: 0.2595| AUC: 0.7616 | logloss_mean: 0.1207801518753822
+Epoch: 87 | Accuracy: 0.932 | Recall: 0.52 | Precision: 0.781| RMSE: 0.2615| AUC: 0.7511 | logloss_mean: 0.12067194582297674
+Epoch: 88 | Accuracy: 0.932 | Recall: 0.568 | Precision: 0.754| RMSE: 0.2599| AUC: 0.7726 | logloss_mean: 0.12016692179372733
+Epoch: 89 | Accuracy: 0.932 | Recall: 0.537 | Precision: 0.77| RMSE: 0.2611| AUC: 0.7588 | logloss_mean: 0.11993988276486403
+Epoch: 90 | Accuracy: 0.934 | Recall: 0.554 | Precision: 0.777| RMSE: 0.2574| AUC: 0.767 | logloss_mean: 0.11968379587079715
+Epoch: 91 | Accuracy: 0.93 | Recall: 0.488 | Precision: 0.79| RMSE: 0.2649| AUC: 0.736 | logloss_mean: 0.11914316876746207
+Epoch: 92 | Accuracy: 0.931 | Recall: 0.542 | Precision: 0.757| RMSE: 0.2628| AUC: 0.7605 | logloss_mean: 0.11830242810029427
+Epoch: 93 | Accuracy: 0.931 | Recall: 0.532 | Precision: 0.763| RMSE: 0.2632| AUC: 0.7558 | logloss_mean: 0.1177431301494102
+Epoch: 94 | Accuracy: 0.932 | Recall: 0.507 | Precision: 0.8| RMSE: 0.2603| AUC: 0.7457 | logloss_mean: 0.11693341261933296
+Epoch: 95 | Accuracy: 0.93 | Recall: 0.549 | Precision: 0.744| RMSE: 0.2646| AUC: 0.7629 | logloss_mean: 0.11696204200875267
+Epoch: 96 | Accuracy: 0.933 | Recall: 0.55 | Precision: 0.767| RMSE: 0.2597| AUC: 0.765 | logloss_mean: 0.1162838097300055
+Epoch: 97 | Accuracy: 0.931 | Recall: 0.502 | Precision: 0.791| RMSE: 0.2625| AUC: 0.743 | logloss_mean: 0.11603398807346821
+Epoch: 98 | Accuracy: 0.933 | Recall: 0.53 | Precision: 0.792| RMSE: 0.2581| AUC: 0.7565 | logloss_mean: 0.11571506273625329
+Epoch: 99 | Accuracy: 0.934 | Recall: 0.521 | Precision: 0.805| RMSE: 0.2572| AUC: 0.7527 | logloss_mean: 0.11479147659271087
+Training Finish
+best model performance, AUC: 0.7759 | logloss: 0.11479147659271087
+
+Finish
+split label ==============================>
