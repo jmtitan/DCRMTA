@@ -1,4 +1,4 @@
 # DCRMTA
 Initial version of DCRMTA.
 
-DCRMTA: Deep Causal Representation for Multi-Touch Attribution
+DCRMTA: Unbiased Causal Representation for Multi-touch Attribution
